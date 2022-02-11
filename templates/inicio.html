@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+        <!-- Este es el titulo -->
+        <title>Mi primera pagina web></title>
+
+    </head>
+    <body>
+        <!-- Crear un titulo con el siguiente texto: Hola mundo en h1 -->   
+        <!-- Crear un titulo h2 con el texto, mi nombre es...-->   
+        <!--Crear un titulo h3 con el siguiente texto: Y estoy en penguin porque -->  
+
+
+        <h1> Hola mundo</h1>
+        <a href= "{{ url_for('inicio')}}"> Inicio </a>
+        <a href= "{{ url_for('contacto')}}"> Contacto </a>
+        <h2> Mi nombre es Luis </h2>
+        <h3> Y estoy en penguin porque deseo aprender</h3>
+
+    <img src="static/perrito.jpg" alt="perrito" width="1000" height="500"> 
+
+    <link rel= "stylesheet" href="{{url_for('static', filename='style.css')}}"> 
+        
+    </body>
+</html>
